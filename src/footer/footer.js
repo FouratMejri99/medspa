@@ -7,15 +7,13 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>📍 49 Sunrise highway , linderhurst , ny 11757</p>
+          <p>📍 49 Sunrise highway , linderhurst , NY 11757</p>
           <p>📞 631-704-9895</p>
           <p>✉️ info@medandspa.com</p>
         </div>
         <div className="footer-section">
-          <h3>Opening Hours</h3>
-          <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
-          <p>Saturday: 10:00 AM - 5:00 PM</p>
-          <p>Sunday: Closed</p>
+          <h3>Call for appointment</h3>
+          <p>📞 631-704-9895</p>
         </div>
         <div className="footer-section">
           <h3>Follow Us</h3>

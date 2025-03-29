@@ -1,3 +1,4 @@
+/* Default styles */
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +27,7 @@
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .logo-img {
   width: 50px; /* Adjust size as needed */
   height: auto;
@@ -64,6 +66,28 @@
 }
 
 /* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .top-bar {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 2rem; /* Reduce logo size on medium screens */
+  }
+
+  .top-bar .info {
+    gap: 0.8rem;
+  }
+
+  .top-bar .offer {
+    margin-right: 1rem;
+  }
+
+  .gold-line {
+    top: 50px; /* Adjusted for better layout on medium screens */
+  }
+}
+
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
@@ -76,7 +100,39 @@
     gap: 0.3rem;
   }
 
+  .top-bar .offer {
+    margin-left: 0;
+    margin-right: 0; /* Centered offer on smaller screens */
+  }
+
+  .logo {
+    font-size: 2rem; /* Slightly smaller logo for mobile */
+  }
+
   .gold-line {
     top: 60px; /* Adjusted for stacked layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.8rem; /* Further reduce logo size for very small screens */
+  }
+
+  .top-bar .info {
+    gap: 0.2rem;
+  }
+
+  .top-bar .offer {
+    font-size: 12px; /* Smaller offer text */
+    margin-right: 0;
+  }
+
+  .gold-line {
+    top: 70px; /* Adjusted for smaller screens */
   }
 }
