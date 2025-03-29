@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>📍 49 Sunrise highway , linderhurst , NY 11757</p>
-          <p>📞 631-704-9895</p>
           <p>✉️ info@medandspa.com</p>
         </div>
         <div className="footer-section">
@@ -31,7 +30,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 med&spa. All rights reserved.</p>
+        <p>&copy; 2025 Belle. All rights reserved.</p>
       </div>
     </footer>
   );
