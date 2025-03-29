@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>📍 123 Wellness Street, City, Country</p>
-          <p>📞 (555) 123-4567</p>
+          <p>📍 49 Sunrise highway , linderhurst , ny 11757</p>
+          <p>📞 631-704-9895</p>
           <p>✉️ info@medandspa.com</p>
         </div>
         <div className="footer-section">

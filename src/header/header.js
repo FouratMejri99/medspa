@@ -8,7 +8,7 @@ const Header = () => {
       {/* Contact Details (Top Bar) */}
       <div className="top-bar">
         <div className="info">
-          <span>📍 New York, USA</span>
+          <span>📍 49 Sunrise highway , linderhurst , NY 11757</span>
           <span>📞 613-704-9895</span>
         </div>
         <div className="offer">🎉 50$ OFF on Any Service! 🎉</div>

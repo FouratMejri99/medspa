@@ -140,7 +140,8 @@
 .title-text {
   font-size: 36px;
   font-weight: bold;
-  color: #a6826c;
+  color: #d8a7aa;
+  font-family: "Dancing Script", cursive;
 }
 
 .location-text {
@@ -153,8 +154,9 @@
 .sub-heading {
   font-size: 22px;
   font-weight: 600;
-  color: #444;
+  color: #d8a7aa;
   margin-top: 10px;
+  font-family: "Dancing Script", cursive;
 }
 
 .about-text p {

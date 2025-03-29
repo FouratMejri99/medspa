@@ -9,6 +9,8 @@
 h2 {
   font-size: 32px;
   margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+  color: #d8a7aa;
 }
 
 .service-grid {
@@ -61,6 +63,8 @@ h2 {
 
 .service-card h3 {
   font-size: 20px;
+  color: #a6826c;
+  font-family: "Dancing Script", cursive;
   margin-bottom: 5px;
 }
 
