@@ -1,0 +1,22 @@
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #a6826c;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e0bb80;
+  outline: none;
+}
+
+.contact-info {
+  text-align: left;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

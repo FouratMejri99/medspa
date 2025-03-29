@@ -1,0 +1,82 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  color: #fff; /* White text for better contrast */
+  background-color: rgba(0, 0, 0, 0.4); /* 80% transparent blue */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); /* Adds a soft blur effect */
+}
+
+.logo {
+  font-family: "Playfair Display", serif; /* Elegant font */
+  font-size: 2.5rem; /* Large size for prominence */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes it more refined */
+  letter-spacing: 2px; /* Adds a modern spacing effect */
+  color: #d8a7aa; /* Soft luxurious pink */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Elegant shadow */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.logo-img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.logo:hover {
+  color: #e0bb80; /* Soft gold when hovered */
+  transform: scale(1.05); /* Slight zoom for effect */
+}
+
+/* Ensuring text in top bar is spaced properly */
+.top-bar .info {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-bar .offer {
+  font-weight: bold;
+  color: #d8a7aa;
+  margin-left: auto;
+  margin-right: 2rem; /* Adjust as needed */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Gold line separating the top bar from navbar */
+.gold-line {
+  background-color: #e0bb80;
+  height: 4px;
+  width: 100%;
+  position: fixed;
+  top: 36px; /* Adjusted for better alignment */
+  left: 0;
+  z-index: 1001;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .top-bar .info {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .gold-line {
+    top: 60px; /* Adjusted for stacked layout */
+  }
+}

@@ -1,38 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Housttely+Signature&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Video Background */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Fullscreen height */
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Ensure video stays behind content */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Welcome Section */
+.welcome-section {
+  position: absolute;
+  top: 18%; /* Move it higher (Adjust as needed) */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2; /* Ensure text stays on top of video */
+  width: 100%;
+  padding: 0 20px; /* Prevent text from touching edges */
+}
+
+.welcome-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700; /* Bold */
+  font-style: italic; /* Italic */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.welcome-subtitle {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 8px;
+  margin: 0;
+}
+
+.welcome-slogan {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  border-bottom: 2px solid white; /* Customize thickness & color */
+  display: inline-block; /* Ensures the underline fits the text width */
+  padding-bottom: 5px; /* Adjust spacing between text and line */
+}
+
+/* Content Sections */
+.content {
+  position: relative;
+  z-index: 3;
+  background: white;
+  padding: 50px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 20px 0;
+  text-align: center;
 }

@@ -1,0 +1,88 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Footer styles */
+.footer {
+  background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+  color: #333; /* Dark text for readability */
+  padding: 50px 20px;
+  text-align: center;
+  backdrop-filter: blur(
+    10px
+  ); /* Adds a blur effect to enhance the transparency */
+  position: relative;
+  z-index: 2;
+  border-top: 2px solid rgba(0, 0, 0, 0.1); /* Adds a subtle border at the top for separation */
+}
+
+/* Footer content section */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Footer section styles */
+.footer-section {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Section headers */
+.footer-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #e0bb80;
+}
+
+/* Footer links */
+.footer-section p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #777;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+  color: #007bff; /* Color change on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-link i {
+  margin-right: 8px;
+  font-size: 22px; /* Size of the icon */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
