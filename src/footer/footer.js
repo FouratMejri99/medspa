@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>📍 49 Sunrise highway , linderhurst , NY 11757</p>
-          <p>✉️ info@medandspa.com</p>
+          <p>✉️ Fedlenenp@mybelleaesthetics.com</p>
         </div>
         <div className="footer-section">
           <h3>Call for appointment</h3>
