@@ -16,10 +16,10 @@ const ServiceSection = () => {
       <div className="service-grid first-row">
         <div className="service-card">
           <img src={hydroFacialImg} alt="Hydro Facials" />
-          <h3>Hydro Facials</h3>
+          <h3>Micro Needling</h3>
           <p>
-            Hydrates, exfoliates, and removes dead skin cells for a youthful
-            glow.
+            Stimulates collagen production to improve skin texture and reduce
+            scars.
           </p>
         </div>
         <div className="service-card">
@@ -36,10 +36,10 @@ const ServiceSection = () => {
       <div className="service-grid second-row">
         <div className="service-card">
           <img src={microneed} alt="Microneedling" />
-          <h3>Microneedling</h3>
+          <h3>Hydro Facials</h3>
           <p>
-            Stimulates collagen production to improve skin texture and reduce
-            scars.
+            Hydrates, exfoliates, and removes dead skin cells for a youthful
+            glow.
           </p>
         </div>
         <div className="service-card">

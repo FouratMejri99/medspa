@@ -1,138 +1,96 @@
-/* Default styles */
-.top-bar {
+/* Navbar container */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  font-size: 14px;
-  color: #fff; /* White text for better contrast */
-  background-color: rgba(0, 0, 0, 0.4); /* 80% transparent blue */
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
   position: fixed;
-  top: 0;
+  top: 0; /* Fixed to the top */
   left: 0;
-  z-index: 1002;
+  width: 100%;
+  z-index: 1001; /* Ensure it's above the content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px); /* Adds a soft blur effect */
 }
 
+/* To prevent content from hiding behind the navbar, add padding-top to the content */
+.main-content {
+  padding-top: 70px; /* This should be the height of your navbar */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #d8a7aa; /* Gold color */
+  text-decoration: none;
+  font-size: 1rem;
+  padding-right: 60px; /* Add padding to the right */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e0bb80; /* Lighter gold on hover */
+}
+
+/* Navbar Logo Styling */
 .logo {
-  font-family: "Playfair Display", serif; /* Elegant font */
-  font-size: 2.5rem; /* Large size for prominence */
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-transform: uppercase; /* Makes it more refined */
-  letter-spacing: 2px; /* Adds a modern spacing effect */
-  color: #d8a7aa; /* Soft luxurious pink */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Elegant shadow */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d8a7aa;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-  width: 50px; /* Adjust size as needed */
+  width: 50px;
   height: auto;
   margin-right: 10px;
   margin-top: 10px;
 }
 
 .logo:hover {
-  color: #e0bb80; /* Soft gold when hovered */
-  transform: scale(1.05); /* Slight zoom for effect */
+  color: #e0bb80;
+  transform: scale(1.05);
 }
 
-/* Ensuring text in top bar is spaced properly */
-.top-bar .info {
-  display: flex;
-  gap: 1rem;
-}
-
-.top-bar .offer {
-  font-weight: bold;
-  color: #d8a7aa;
-  margin-left: auto;
-  margin-right: 2rem; /* Adjust as needed */
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Gold line separating the top bar from navbar */
-.gold-line {
-  background-color: #e0bb80;
-  height: 4px;
-  width: 100%;
-  position: fixed;
-  top: 36px; /* Adjusted for better alignment */
-  left: 0;
-  z-index: 1001;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .top-bar {
-    padding: 0.5rem 1.5rem;
-  }
-
-  .logo {
-    font-size: 2rem; /* Reduce logo size on medium screens */
-  }
-
-  .top-bar .info {
-    gap: 0.8rem;
-  }
-
-  .top-bar .offer {
-    margin-right: 1rem;
-  }
-
-  .gold-line {
-    top: 50px; /* Adjusted for better layout on medium screens */
-  }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
-  .top-bar .info {
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .top-bar .offer {
-    margin-left: 0;
-    margin-right: 0; /* Centered offer on smaller screens */
-  }
-
   .logo {
-    font-size: 2rem; /* Slightly smaller logo for mobile */
+    font-size: 2rem;
   }
 
-  .gold-line {
-    top: 60px; /* Adjusted for stacked layout */
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .top-bar {
-    padding: 0.5rem 1rem;
-  }
-
   .logo {
-    font-size: 1.8rem; /* Further reduce logo size for very small screens */
+    font-size: 1.8rem;
   }
 
-  .top-bar .info {
-    gap: 0.2rem;
+  .logo-img {
+    width: 40px;
   }
 
-  .top-bar .offer {
-    font-size: 12px; /* Smaller offer text */
-    margin-right: 0;
-  }
-
-  .gold-line {
-    top: 70px; /* Adjusted for smaller screens */
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
   }
 }
