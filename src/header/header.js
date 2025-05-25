@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bellelogo from "../assets/logo.png";
+import bellelogo from "../assets/logo1.png";
 import "../styles/header.css";
 
 const Header = () => {
