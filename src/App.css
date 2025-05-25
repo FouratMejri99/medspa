@@ -58,14 +58,27 @@ body {
 /* Welcome Section */
 .welcome-section {
   position: absolute;
-  top: 18%; /* Move it higher (Adjust as needed) */
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  z-index: 2; /* Ensure text stays on top of video */
+  z-index: 2;
   width: 100%;
-  padding: 0 20px; /* Prevent text from touching edges */
+  padding: 0 20px;
+}
+
+/* Adjust position for smaller screens */
+@media (max-width: 768px) {
+  .welcome-section {
+    top: 12%; /* Move it higher */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section {
+    top: 10%; /* Even higher for small phones */
+  }
 }
 
 .welcome-content {

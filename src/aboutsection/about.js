@@ -1,7 +1,5 @@
-import React from "react";
-
-import beauty from "../assets/beauty.jpg";
 import "../styles/sections.css";
+
 const AboutSection = () => {
   return (
     <section id="about" className="section">
@@ -9,7 +7,7 @@ const AboutSection = () => {
         <div className="about-text">
           <h2 className="title-text">BELLE AESTHETICS & WELLNESS</h2>
           <h4 className="location-text">
-            A Wellness Spa in 49 Sunrise highway , linderhurst , ny 11757
+            A Wellness Spa in 49 Sunrise Highway, Lindenhurst, NY 11757
           </h4>
           <h3 className="sub-heading">Trust, Expertise, Radiance</h3>
           <p>
@@ -24,9 +22,6 @@ const AboutSection = () => {
             Each client receives a customized consultation to ensure their needs
             and goals are met with the highest standard of care.
           </p>
-        </div>
-        <div className="about-image">
-          <img src={beauty} alt="Belle Aesthetics & Wellness" />
         </div>
       </div>
     </section>
